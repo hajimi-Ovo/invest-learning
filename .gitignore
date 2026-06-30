@@ -1,0 +1,14 @@
+# Obsidian personal workspace layout (don't share)
+.obsidian/workspace.json
+.obsidian/graph.json
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Claude AI working directory
+.claudian/
+
+# OS files
+.DS_Store
+Thumbs.db
