@@ -2,5 +2,6 @@
   "autoPairBrackets": false,
   "autoPairMarkdown": false,
   "promptDelete": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "showLineNumber": true
 }
