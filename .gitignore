@@ -9,6 +9,9 @@ __pycache__/
 # Claude AI working directory
 .claudian/
 
+# Obsidian plugin runtime data (session state, changes constantly)
+.obsidian/plugins/*/data.json
+
 # OS files
 .DS_Store
 Thumbs.db
