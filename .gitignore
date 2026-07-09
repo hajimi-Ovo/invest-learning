@@ -12,6 +12,9 @@ __pycache__/
 # Obsidian plugin runtime data (session state, changes constantly)
 .obsidian/plugins/*/data.json
 
+# Obsidian page preview cache
+.obsidian/page-preview.json
+
 # OS files
 .DS_Store
 Thumbs.db
