@@ -44,3 +44,35 @@ $$
 - 每日笔记放在 `July/` 或 `June/` 月度文件夹下
 - 添加 YAML frontmatter：`date`, `tags`, `type`, `status`
 - 关联笔记区使用 `[!info]` 或 `[!tip]` callout 汇总
+
+## 隐私安全与 Git 推送规范
+
+### 禁止上传的内容
+
+| 类别 | 示例 | 处理方式 |
+|------|------|---------|
+| **个人信息** | 手机号、邮箱、家庭地址、身份证号 | 绝对禁止上传，发现立即清除历史 |
+| **账户凭证** | 密码、API Key、Token、私钥、OTP | 绝对禁止上传，发现立即轮换凭证 |
+| **本地配置文件** | `.env`、`*.local.*`、`settings.local.json` | 加入 `.gitignore`，禁止提交 |
+| **会话数据** | `data.json`（插件运行缓存） | 已在 `.gitignore` 排除 `plugins/*/data.json` |
+| **个人工作区布局** | `workspace.json`、`graph.json` | 已在 `.gitignore` 排除 |
+
+### 推送前检查清单
+
+1. 运行 `git status` 确认没有意外包含配置文件
+2. 检查新增/修改的 `.md` 文件是否包含个人身份信息
+3. 图片文件（`attachment/*.png`）不包含屏幕截图中的个人信息
+4. `.obsidian/` 目录下的文件原则上不应提交，除非确认为公共配置
+5. 首次推送或批量添加文件时，先 `git add --dry-run` 预览待提交内容
+
+### 隐私泄露应急处理
+
+若发现隐私文件已上传至 GitHub：
+1. **立即轮换凭证**（如有密码/API Key）
+2. 使用 `git filter-branch` 或 BFG Repo-Cleaner 从 Git 历史中彻底清除
+3. 强制推送清理后的历史：`git push --force`
+4. 通知 GitHub Support 删除缓存的提交数据（如有必要）
+
+### 历史记录备注
+
+> `.obsidian/plugins/*/data.json` 文件曾于早期提交被误推送，后在 `bfb8538` 提交中删除，并已加入 `.gitignore`。后续推送不会再包含这类文件。
