@@ -1,3 +1,9 @@
+---
+date: 2026-07-01
+tags: [Obsidian, Markdown, 教程]
+type: guide
+status: complete
+---
 
 下面是**最基础、最常用**的 Markdown 语法，学会这些就能覆盖 90% 的使用场景。
 

@@ -1,3 +1,10 @@
+---
+date: 2026-07-03
+tags: [Obsidian, Dataview, 教程]
+type: guide
+status: complete
+---
+
 # Dataview 实战指南：用查询盘活你的知识库
 
 > 本文承接 [[June/markdown基础语法#16. 笔记属性（Properties / YAML Frontmatter）]]，深入讲解如何用 Dataview 插件将笔记属性转化为**动态查询**，打造可检索、可汇总、可分析的知识库。

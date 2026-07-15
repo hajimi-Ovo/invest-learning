@@ -1,3 +1,10 @@
+---
+date: 2026-06-29
+tags: [读书笔记, 经济学]
+type: booknote
+status: complete
+---
+
 # 牛奶可乐经济学
 
 > 阅读笔记 · 2026年6月
