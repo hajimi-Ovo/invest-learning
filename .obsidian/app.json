@@ -3,5 +3,6 @@
   "autoPairMarkdown": false,
   "promptDelete": false,
   "alwaysUpdateLinks": true,
-  "showLineNumber": true
+  "showLineNumber": true,
+  "attachmentFolderPath": "attachment"
 }
